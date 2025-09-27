@@ -49,7 +49,7 @@ def create_item(request, payload: ItemCreate) -> ItemOut:
 
 Both **Pydantic v2** (`BaseModel`) and **msgspec** (`Struct`) are supported. You choose—the framework adapts.
 
-## Resources—for structure
+## Resources - for structure
 When you have a cohesive set of operations (CRUD + custom actions), use the `Resource` class:
 
 ```python
