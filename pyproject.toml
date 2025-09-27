@@ -1,0 +1,12 @@
+[project]
+name = "django-matryoshka"
+version = "0.1.0"
+description = "Lightweight API framework for django 5.2+"
+authors = [
+  { name = "Alexey Potapov", email = "me@black-as-ink.ru" },
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django>=5.2",
+]
