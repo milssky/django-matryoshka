@@ -14,5 +14,4 @@ class MatryoshkaAPI:
     ```
     """
 
-    def __init__(self) -> None:
-        return None
+    def __init__(self) -> None: ...
