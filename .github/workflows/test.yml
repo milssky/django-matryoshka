@@ -1,3 +1,4 @@
+---
 name: Test
 
 'on':
@@ -13,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -21,7 +22,7 @@ jobs:
         python-version: ['3.13']
     steps:
       - name: Checkout repo
-      - uses: actions/checkout@v5
+        uses: actions/checkout@v5
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v6
@@ -52,10 +53,10 @@ jobs:
         run: uv run mypy .
 
       - name: Pytest
-        run: uv run Pytest
+        run: uv run pytest
 
       - name: YAML lint
-        run: uv run yamllint -d '{"extends": "default", "ignore": ".venv"}' -s .
+        run: uv run yamllint -s .
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
