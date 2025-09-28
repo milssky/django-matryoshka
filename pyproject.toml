@@ -19,10 +19,14 @@ docs = [
 
 [dependency-groups]
 dev = [
+    "covdefaults>=2.3.0",
     "mypy>=1.18.2",
     "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+    "pytest-timeout>=2.4.0",
     "ruff>=0.13.2",
     "wemake-python-styleguide>=1.4.0",
+    "yamllint>=1.37.1",
 ]
 
 [tool.ruff]
@@ -118,10 +122,6 @@ pydocstyle.convention = "google"
 [tool.ruff.lint.isort]
 case-sensitive = true
 
-
-[tool.pytest.ini_options]
-minversion = "8.4"
-testpaths = ["tests"]
 
 [tool.mypy]
 strict = true
