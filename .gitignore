@@ -261,3 +261,6 @@ artifacts/
 
 # celery
 celerybeat-schedule
+
+# mkdocs:
+docs/site
