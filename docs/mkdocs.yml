@@ -1,0 +1,27 @@
+site_name: Django Matryoshka
+site_description: An API framework for Django where each layer hides complexity—and reveals simplicity.
+site_url: https://github.com/milssky/django-matryoshka
+docs_dir: content
+repo_name: milssky/django-matryoshka
+repo_url: https://github.com/milssky/django-matryoshka
+theme:
+  name: material
+  features:
+    - content.code.copy
+  palette:
+  - scheme: default
+    primary: green
+    accent: green
+    toggle:
+      icon: material/weather-night
+      name: Switch to dark mode
+  - scheme: slate
+    primary: green
+    accent: green
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
