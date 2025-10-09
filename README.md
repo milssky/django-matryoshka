@@ -1,3 +1,5 @@
+**Further work will be carried out in [https://github.com/wemake-services/django-modern-rest](https://github.com/wemake-services/django-modern-rest)**
+
 An API framework for Django where each layer hides complexity—and reveals simplicity.
 
 Only the latest. Only the essential. No compromises.
